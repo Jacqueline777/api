@@ -15,4 +15,4 @@ jobs:
     - name: Install Newman
       run: npm install -g newman
     - name: Run API Tests
-      run: newman run "Waste Management.postman_collection.json" -e SIT.postman_environment.json -r cli,html
+      run: newman run "tests/Waste Management.postman_collection.json" -e "tests/SIT.postman_environment.json" -r cli,html
